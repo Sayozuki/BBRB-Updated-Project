@@ -1,0 +1,14 @@
+.profile-container {
+    margin-top: 80px; /* Adjust this value to match your navbar height */
+}
+
+.modal {
+    top: 80px; /* Adjust this value to match your navbar height */
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: calc(100vh - 80px); /* Optional: Center the modal */
+}

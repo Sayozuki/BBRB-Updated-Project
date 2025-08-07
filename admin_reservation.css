@@ -1,0 +1,85 @@
+.custom-popup-overlay {
+            display: none;
+            position: fixed;
+            z-index: 1050;
+            left: 0; top: 0; width: 100vw; height: 100vh;
+            background: rgba(0,0,0,0.4);
+            justify-content: center;
+            align-items: center;
+        }
+        .custom-popup {
+            background: #fff;
+            border-radius: 8px;
+            padding: 30px 20px 20px 20px;
+            min-width: 320px;
+            max-width: 90vw;
+            box-shadow: 0 2px 16px rgba(0,0,0,0.2);
+            position: relative;
+        }
+        .custom-popup .close-popup {
+            position: absolute;
+            right: 12px;
+            top: 10px;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: #888;
+            cursor: pointer;
+        }
+        .custom-popup label { margin-top: 10px; }
+        /* Container for each archived reservation */
+.reservation-container {
+    background: #f8f9fa;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+    padding: 1.5rem;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+    transition: box-shadow 0.2s;
+}
+
+.reservation-container:hover {
+    box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+}
+
+.reservation-container strong {
+    color: #343a40;
+}
+
+.reservation-container .badge {
+    font-size: 1em;
+    padding: 0.5em 1em;
+}
+
+
+        /* Remove hover/focus effect for the dropdown */
+        .form-select:focus, 
+        .form-select:hover {
+            box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25) !important;
+            border-color: #0d6efd !important;
+            background-color: #f8f9fa !important;
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        /* Remove hover background for dropdown options (browser support may vary) */
+        .form-select option:hover, 
+        .form-select option:focus {
+            background: #e9ecef !important;
+            color: #212529 !important;
+        }
+        .form-select.custom-dropdown {
+            border: 2px solid #adb5bd;
+            border-radius: 0.5rem;
+            background-color: #f8f9fa;
+            color: #212529;
+            font-weight: 500;
+            padding: 0.5rem 1.5rem 0.5rem 0.75rem;
+            min-width: 170px;
+            box-shadow: 0 2px 8px rgba(13,110,253,.08);
+            transition: border-color 0.2s, box-shadow 0.2s;
+        }
+        .reservation-container {
+            outline: 2px solid #adb5bd; /* Gray outline */
+            outline-offset: 0px;
+        }
+        
+        

@@ -1,0 +1,32 @@
+/* Center the icons */
+.card-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px; /* Adjust height as needed */
+    margin-bottom: 20px; /* Add spacing below the icon */
+}
+
+/* Style for the cards */
+.card {
+    border: none; /* Remove border for a cleaner look */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Add padding inside the card */
+}
+
+/* Heading container styling */
+.heading_container {
+    margin-bottom: 40px; /* Add spacing below the heading */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .card-icon {
+        height: 80px; /* Reduce height for smaller screens */
+    }
+
+    .card {
+        padding: 15px; /* Adjust padding for smaller screens */
+    }
+}

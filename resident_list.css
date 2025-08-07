@@ -1,0 +1,105 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #001f3f; /* Navy blue background */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the sidebar is above other elements */
+}
+
+.sidebar h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #f8f9fa;
+}
+
+.sidebar-link {
+    display: block;
+    color: #f8f9fa;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: #003366; /* Slightly lighter navy blue on hover */
+    color: #64abf1;
+}
+
+.sidebar-link i {
+    margin-right: 10px;
+}
+
+/* Content styles */
+.content {
+    margin-left: 260px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
+
+/* Table styles */
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.table th,
+.table td {
+    padding: 8px 10px; /* Compact padding */
+    text-align: left;
+    vertical-align: middle;
+}
+
+.table-sm th,
+.table-sm td {
+    padding: 5px; /* Smaller padding for compact tables */
+}
+
+/* Table header styling */
+.table thead th {
+    background-color: #001f3f; /* Navy blue background */
+    color: #ffffff; /* White text */
+    text-align: left;
+    padding: 10px;
+    font-weight: bold;
+}
+
+/* Alternating row colors */
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #f8f9fa; /* Light gray for striped rows */
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #ffffff; /* White for alternating rows */
+}
+
+/* Search and Sort Controls */
+#searchInput {
+    margin-right: 10px;
+}
+
+.btn-sm {
+    margin-left: 5px;
+}
+
+.input-group-text {
+    border: none;
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.dropdown-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-toggle i {
+    margin-right: 5px;
+}

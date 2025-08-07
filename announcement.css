@@ -1,0 +1,191 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Ensure the body and html take full height */
+html, body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif; /* Use a clean font */
+}
+
+/* Fixed dimensions for carousel items */
+.announcement_section .carousel-item {
+    height: 400px; /* Fixed height */
+}
+
+.announcement-info {
+    padding: 20px;
+    height: 100%; /* Ensure content fills the height */
+    overflow-y: auto; /* Add scroll if content exceeds height */
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: flex-start; /* Align content to the top */
+}
+
+/* Title styling */
+.announcement-title {
+    font-weight: bold;
+    font-size: 1.5rem; /* Make the title pop out more */
+    color: #001f3f; /* Navy blue color */
+    margin-bottom: 15px;
+}
+
+/* Navy blue label convention */
+.navy-label {
+    color: #001f3f; /* Navy blue color for labels */
+    margin-bottom: 5px;
+}
+
+.label-value {
+    color: #000; /* Black color for values */
+}
+
+/* Participate Button Styling */
+.btn-participate {
+    display: inline-block; /* Prevent full-width behavior */
+    padding: 5px 10px; /* Compact button size */
+    font-size: 14px;
+    min-width: 100px; /* Minimum width for consistency */
+    min-height: 35px; /* Minimum height for consistency */
+    max-width: 150px; /* Maximum width */
+    max-height: 40px; /* Maximum height */
+    text-align: center; /* Center text */
+}
+
+/* Button styling */
+.btn-navy {
+    background-color: #001f3f; /* Navy blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 5px 15px; /* Smaller button size */
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.btn-navy:hover {
+    background-color: #003366; /* Darker navy blue on hover */
+    color: #ffffff;
+}
+
+/* Carousel controls styling */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #001f3f; /* Navy blue background */
+    border-radius: 50%;
+    min-height: 30px; /* Uniform size */
+    min-width: 30px;
+    max-height: 40px; /* Uniform size */
+    max-width: 40px;
+    padding: 5px; /* Compact control size */
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    background: none; /* Remove transparent overlay */
+    border: none;
+}
+
+/* Image section styling */
+.announcement_section .carousel-item .col-md-6 img {
+    height: 100%; /* Ensure the image fills the container */
+    width: 100%; /* Ensure the image fills the container */
+    object-fit: cover; /* Maintain aspect ratio and crop excess */
+
+    min-height: 350px; /* Maximum height */
+    min-width: 400px; /* Maximum width */
+    border-radius: 10px; /* Add rounded corners for aesthetics */
+}
+
+/* Custom carousel controls */
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.carousel-controls .btn-navy {
+    background-color: #001f3f; /* Navy blue background */
+    color: #ffffff; /* White text */
+    border: none;
+    padding: 5px 15px; /* Compact button size */
+    font-size: 16px; /* Slightly larger font size for icons */
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.carousel-controls .btn-navy i {
+    font-size: 18px; /* Adjust icon size */
+}
+
+.carousel-controls .btn-navy:hover {
+    background-color: #003366; /* Darker navy blue on hover */
+    color: #ffffff;
+}
+
+/* Center modal and prevent overlap with navbar */
+.modal-dialog-centered {
+    margin-top: 50px; /* Add margin to prevent overlap with navbar */
+}
+
+.modal-content {
+    border-radius: 10px; /* Add rounded corners for aesthetics */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Add shadow for better visibility */
+}
+
+/* Make the content-wrapper take up remaining space */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer styling */
+footer {
+    background-color: #001f3f; /* Navy blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 1rem;
+}
+
+.announcement-heading {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #007bff; /* Blue color */
+    margin-bottom: 0.5rem;
+}
+
+.announcement-description {
+    font-size: 1.2rem;
+    color: #6c757d; /* Gray color */
+    margin-bottom: 2rem;
+}
+
+.heading_container p {
+    text-decoration: underline; /* Underline the description */
+    font-style: normal;
+    display: block; /* Stack elements vertically */
+    text-align: center; /* Center-align the text */
+    margin: 0 auto; /* Center the elements horizontally */
+}
+
+/* Ensure the heading and description are block-level elements */
+.heading_container h2 {
+    display: block; /* Stack elements vertically */
+    text-align: center; /* Center-align the text */
+    margin: 0 auto; /* Center the elements horizontally */
+}
+
+/* Ensure the heading container stacks elements vertically */
+.heading_container {
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    align-items: center; /* Center-align children horizontally */
+    justify-content: center; /* Center-align children vertically */
+    text-align: center; /* Center-align text */
+}

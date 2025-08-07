@@ -1,0 +1,28 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f8f9fa; /* Optional: Add a background color */
+}
+
+.header_section{
+    min-width: 100vw;
+}
+
+.card {
+    width: 25vw;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: Add a shadow for better visibility */
+    border-radius: 8px; /* Optional: Add rounded corners */
+    background-color: #fff; /* Ensure the card has a white background */
+}
+
+.card h4 {
+    text-align: center;
+    color:navy;
+    font-style: bold;
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+

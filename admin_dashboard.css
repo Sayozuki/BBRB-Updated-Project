@@ -1,0 +1,111 @@
+/* Sidebar styles */
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 250px;
+    background-color: #001f3f; /* Navy blue background */
+    color: #fff;
+    padding: 20px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000; /* Ensure the sidebar is above other elements */
+}
+
+.sidebar h4 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: #f8f9fa;
+}
+
+.sidebar-link {
+    display: block;
+    color: #f8f9fa;
+    text-decoration: none;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.sidebar-link:hover {
+    background-color: #003366; /* Slightly lighter navy blue on hover */
+    color: #64abf1;
+}
+
+.sidebar-link i {
+    margin-right: 10px;
+}
+
+/* Content styles */
+.content {
+    margin-left: 260px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+/* Modal styles */
+.modal-backdrop {
+    backdrop-filter: blur(5px); /* Apply blur effect */
+}
+
+/* Blue theme for modal */
+.blue-theme-modal {
+    background-color: #fff; /* Navy blue background */
+    color: #001f3f; /* White text */
+    border-radius: 10px; /* Rounded corners */
+}
+
+.blue-theme-modal .modal-header {
+    background-color: #003366; /* Darker blue for header */
+    color: #ffffff; /* White text */
+    border-bottom: 1px solid #00509e; /* Accent border */
+}
+
+.blue-theme-modal .modal-footer {
+    background-color: #003366; /* Darker blue for footer */
+    border-top: 1px solid #00509e; /* Accent border */
+}
+
+.blue-theme-modal .form-control {
+    background-color: #f8f9fa; /* Light background for inputs */
+    color: #001f3f; /* Navy blue text */
+}
+
+.blue-theme-modal .form-select {
+    background-color: #f8f9fa; /* Light background for dropdown */
+    color: #001f3f; /* Navy blue text */
+}
+
+/* Thumbnail styling */
+.img-thumbnail {
+    max-width: 250px; /* Maximum width for landscape orientation */
+    max-height: 200px; /* Maximum height */
+    min-width: 250px;
+    min-height: 200px;
+    object-fit: cover; /* Ensures the image fits within the dimensions */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for better visibility */
+}
+
+/* List item styling */
+.list-group-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    padding: 15px;
+    background-color: #f8f9fa;
+}
+
+/* Navy blue labels */
+.text-label {
+    color: #001f3f;
+    font-weight: bold;
+}

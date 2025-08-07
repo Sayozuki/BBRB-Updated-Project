@@ -1,0 +1,119 @@
+.header-logo {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Confirmation Modal Custom Style */
+
+
+.modal-content {
+    border-radius: 14px;
+    box-shadow: 0 12px 40px rgba(0,0,0,0.35); /* Stronger shadow */
+    padding: 0 10px 10px 10px;
+    background: #fff;
+}
+
+.modal-header {
+    position: relative;
+    border-bottom: 1px solid #e9ecef;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    border-radius: 12px 12px 0 0;
+    background: #f8f9fa;
+}
+
+.modal-title {
+    font-weight: 600;
+    color: #007bff;
+}
+
+.modal-body {
+    padding: 1.5rem;
+    font-size: 1.05em;
+}
+
+.modal-body p {
+    margin-bottom: 0.7rem;
+}
+
+.modal-footer {
+    border-top: 1px solid #e9ecef;
+    padding: 1rem 1.5rem;
+    border-radius: 0 0 12px 12px;
+    background: #f8f9fa;
+}
+
+.modal-backdrop.show {
+    opacity: 1 !important;
+    background: rgba(0,0,0,0.35) !important;
+}
+
+/* Style the modal close button */
+.modal-header .close {
+    position: absolute;
+    top: 18px;
+    right: 22px;
+    z-index: 10;
+    padding: 0.5rem 1rem;
+    color: #888;
+    font-size: 1.7rem;
+    font-weight: 400;
+    background: transparent;
+    border: none;
+    opacity: 1;
+    transition: color 0.2s;
+    border-radius: 50%;
+}
+
+.modal-header .close:hover,
+.modal-header .close:focus {
+    color: gray;
+}
+
+@media (max-width: 576px) {
+    .modal-dialog {
+        max-width: 98vw;
+        margin: 1.5rem auto;
+        /* Remove min-height here too */
+    }
+    .modal-content {
+        padding: 0 2px 2px 2px;
+    }
+    .modal-body {
+        padding: 1rem;
+    }
+    .modal-header, .modal-footer {
+        padding: 1rem;
+    }
+}
+
+/* Add this to your CSS file */
+.modal {
+  display: none;
+  position: fixed !important;
+  z-index: 1050 !important;
+  top: 0 !important;
+  left: 0 !important;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  outline: 0;
+}
+
+.modal-dialog {
+  margin: 0 auto;
+  max-width: 500px; /* Optional: set a max width for the modal */
+}
+
+/* Center Bootstrap modal vertically and horizontally */
+.modal-dialog-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0 auto;
+}
+
+/* Add this to your reservation.css or in a <style> tag */
+.modal-backdrop {
+    z-index: 1040 !important;
+}
