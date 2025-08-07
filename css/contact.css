@@ -1,0 +1,17 @@
+.info_section {
+    padding: 30px 0 !important; /* Reduce vertical padding */
+    background-color: #2a4d8f; /* Optional: Adjust background color */
+}
+
+.info_contact .row {
+    margin-bottom: 10px; /* Reduce spacing between rows */
+}
+
+.info_contact a {
+    font-size: 14px; /* Reduce font size */
+}
+
+.info_social img {
+    height: 30px; /* Reduce icon size */
+    width: auto;
+}

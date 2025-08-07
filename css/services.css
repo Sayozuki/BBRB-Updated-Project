@@ -1,0 +1,129 @@
+/* Service Section Layout */
+.service_section {
+    padding: 60px 0;
+    background: #f8fafc;
+}
+
+.service_section .container {
+    max-width: 100%;
+    width: 100%;
+}
+
+.service_container {
+    display: flex;
+    justify-content: center;
+    gap: 24px; /* smaller gap */
+    flex-wrap: nowrap;
+}
+
+.service_container .box {
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    width: 300px; /* slightly smaller width */
+    min-width: 220px;
+    min-height: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    margin-bottom: 30px;
+    overflow: hidden;
+}
+
+.service_container .box:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+}
+
+/* Top Bar for All Cards */
+.service_container .box::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 16px;
+    background: #001f4d; /* Navy blue */
+    border-radius: 20px 20px 0 0;
+    z-index: 2;
+}
+
+/* Image Box */
+.service_container .img-box {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    z-index: 3;
+}
+
+.service_container .img1 {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+}
+
+/* Details */
+.service_container .detail-box {
+    text-align: center;
+    padding: 0 20px 30px 20px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+.service_container .detail-box h5 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #001f4d; /* Navy blue */
+    margin-bottom: 10px;
+    margin-top: 10px;
+}
+
+.service_container .detail-box p {
+    color: #333;
+    font-size: 1rem;
+    margin-bottom: 18px;
+}
+
+.service_container .btn {
+    background: #001f4d;
+    border: none;
+    color: #fff;
+    border-radius: 8px;
+    padding: 8px 22px;
+    font-weight: 600;
+    transition: background 0.2s;
+    margin-top: auto;
+}
+
+.service_container .btn:hover {
+    background: #1741a6;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 1100px) {
+    .service_container {
+        gap: 20px;
+    }
+}
+
+/* Always keep cards in a row unless on very small screens */
+.service_container {
+    flex-wrap: nowrap !important;
+    justify-content: center;
+}
+
+.service_container .box {
+    width: 300px;
+    min-width: 250px;
+    max-width: 350px;
+}
+
+/* Optional: Only stack on very small screens */
+@media (max-width: 950px) {
+    .service_container {
+        flex-wrap: wrap !important;
+    }
+}

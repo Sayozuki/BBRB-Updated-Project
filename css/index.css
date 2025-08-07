@@ -1,0 +1,202 @@
+.hero_area {
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(63, 84, 200, 0.5)), url('../images/about-2.png'); /* Adds a gradient overlay */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Sets text color to white */
+}
+
+.hero_area h1, .hero_area p, .hero_area a {
+    color: white; /* Ensures all text elements in hero_area are white */
+}
+
+.navbar {
+    background-color: transparent; /* Optional: Adjust navbar background */
+    color: white; /* Sets text color to white */
+}
+
+.navbar a {
+    color: white !important; /* Ensures links in the navbar are white */
+}
+
+.navbar-brand img {
+    height: 60px;
+    width: auto;
+    margin-right: 10px; /* Adds spacing between the image and text */
+}
+
+.navbar-brand span {
+    color: white; /* Change the text color to white */
+    font-weight: bold; /* Optional: Make the text bold */
+    font-size: 18px; /* Optional: Adjust the font size */
+}
+
+.info_section {
+    padding: 30px 0; /* Reduce vertical padding */
+    background-color: #2a4d8f; /* Optional: Adjust background color */
+}
+
+.info_contact .row {
+    margin-bottom: 10px; /* Reduce spacing between rows */
+}
+
+.info_contact a {
+    font-size: 14px; /* Reduce font size */
+}
+
+.info_social img {
+    height: 30px; /* Reduce icon size */
+    width: auto;
+}
+
+.modal-content {
+    background-color: #fff; /* Ensure the modal has a visible background */
+    color: #000; /* Ensure text is visible */
+    border-radius: 5px; /* Optional: Add rounded corners */
+}
+
+.modal-header h5 {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.modal-footer .btn-secondary {
+    background-color: #6c757d;
+    color: #fff;
+}
+
+.modal-footer .btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.modal-dialog {
+    display: flex;
+    align-items: center; /* Vertically center the modal */
+    justify-content: center; /* Horizontally center the modal */
+    min-height: 100vh; /* Ensure the modal takes up the full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+/* Navy blue background for the whole section */
+.service_section.navy-bg {
+    background: #001f4d !important;
+    color: #fff !important;
+    padding: 60px 0;
+}
+
+/* Make all text inside the section white, except inside .box */
+.service_section.navy-bg,
+.service_section.navy-bg .heading_container,
+.service_section.navy-bg .heading_container h2,
+.service_section.navy-bg .heading_container p {
+    color: #fff !important;
+}
+
+/* Ensure text inside .box uses default color (not forced white) */
+.service_section.navy-bg .box,
+.service_section.navy-bg .box h5,
+.service_section.navy-bg .box p,
+.service_section.navy-bg .btn {
+    color: #222 !important;
+    background: #fff !important;
+}
+
+/* If you want the button to be colored, override as needed */
+.service_section.navy-bg .btn {
+    background: #1741a6 !important;
+    color: #fff !important;
+}
+
+/* Navy blue background for announcements section */
+.blog_section.navy-bg {
+    background: #ffffff !important;
+    color: #fff !important;
+    padding: 60px 0;
+}
+
+/* White text for headings and section, except cards */
+.blog_section.navy-bg,
+.blog_section.navy-bg .heading_container,
+.blog_section.navy-bg .heading_container h2,
+.blog_section.navy-bg .heading_container p {
+    color: #000000 !important;
+}
+
+/* Announcement cards: white background, dark text */
+.blog_section.navy-bg .announcement-card {
+    background: #fff !important;
+    color: #222 !important;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+    padding: 24px;
+    margin-bottom: 24px;
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUpCard 0.8s forwards;
+    animation-delay: 0.2s;
+}
+
+/* Animation for text */
+@keyframes fadeInUpText {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.animate-text {
+    opacity: 0;
+    animation: fadeInUpText 1s forwards;
+}
+
+.animate-text:nth-child(1) { animation-delay: 0.1s; }
+.animate-text:nth-child(2) { animation-delay: 0.3s; }
+.animate-text:nth-child(3) { animation-delay: 0.5s; }
+
+/* Animation for service boxes (already present, keep as is) */
+.service_container .box {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 0.8s forwards;
+    animation-delay: 0.2s;
+    background: #fff !important;
+    color: #222 !important;
+    border-radius: 16px;
+    box-shadow: 0 4px 24px rgba(252, 252, 252, 0.08);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.service_container .box:hover {
+    box-shadow: 0 16px 32px rgba(252, 250, 250, 0.18);
+    transform: translateY(-8px) scale(1.03);
+}
+
+.service_container .box:nth-child(2) { animation-delay: 0.4s; }
+.service_container .box:nth-child(3) { animation-delay: 0.6s; }
+
+@keyframes fadeInUp {
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+/* Animation for card appearance */
+@keyframes fadeInUpCard {
+    from {
+        opacity: 0;
+        transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: none;
+    }
+}
+
+.blog_section.navy-bg .announcement-card:nth-child(2) { animation-delay: 0.4s; }
+.blog_section.navy-bg .announcement-card:nth-child(3) { animation-delay: 0.6s; }

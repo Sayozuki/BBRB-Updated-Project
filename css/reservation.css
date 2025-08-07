@@ -1,0 +1,123 @@
+.header-logo {
+    max-width: 120px;
+    height: auto;
+}
+
+/* Dark red error message styling */
+.dark-red {
+    color: #8B0000; /* Dark red color */
+    font-weight: bold;
+}
+
+/* Remove close button styling */
+.close-btn {
+    display: none; /* Hide the close button */
+}
+
+/* Ensure the body and html take full height */
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Make the content-wrapper take up remaining space */
+.content-wrapper {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Footer styling */
+footer {
+    background-color: #001f3f; /* Navy blue background */
+    color: #ffffff; /* White text */
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Modal content styling */
+.custom-popup-content {
+    background: #fff;
+    border-radius: 8px;
+    width: 400px;
+    max-width: 90vw;
+    box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+}
+
+/* Modal body styling */
+.custom-popup-body {
+    padding: 16px 20px;
+    max-height: 300px; /* Limit the height */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+/* Modal footer styling */
+.custom-popup-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 8px 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Card styling */
+.card {
+    cursor: pointer;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px; /* Add padding for spacing */
+    height: 250px; /* Set a fixed height for consistent layout */
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Center the icon and text */
+.card-icon {
+    margin-bottom: 10px;
+    font-size: 6rem; /* Adjust icon size */
+    color: #001f3f; /* Navy blue color */
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #333;
+    text-align: center; /* Center the text */
+}
+
+/* Styling for the descriptive text */
+.text-muted {
+    font-size: 1rem; /* Slightly smaller font size */
+    color: #6c757d; /* Muted gray color */
+    margin-bottom: 20px; /* Add spacing below the text */
+}
+
+#reason {
+    max-height: 200px; /* Limit the height of the dropdown */
+    overflow-y: auto; /* Enable vertical scrolling */
+}
+
+form #reason {
+    max-height: 200px;
+    overflow-y: auto;
+}
+
+/* Wrap the dropdown in a container */
+.dropdown-container {
+    max-height: 200px; /* Limit the height */
+    overflow-y: auto; /* Enable scrolling */
+    position: relative; /* Ensure proper positioning */
+    z-index: 10; /* Prevent overlap issues */
+}
